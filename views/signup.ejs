@@ -1,0 +1,30 @@
+<%- include('header')%>
+<!-- https://player.vimeo.com/external/561789614.sd.mp4?s=9dba3e258ff8951a767e2436b4363ec3c9e02f54&profile_id=164&oauth2_token_id=57447761 -->
+<!-- https://player.vimeo.com/external/537893707.sd.mp4?s=3c12c2c3d6a55183577e17c7a68b8d1d681168e0&profile_id=164&oauth2_token_id=57447761 -->
+
+<div class="main">
+
+  <video src="/images/loginpage.mp4" autoplay loop muted></video>
+
+
+  <div class="box">
+    <img src="/images/log.png" alt="">
+
+    <h1>Welcome</h1>
+
+    <p>Log in to Expense-tracker to continue to MoneyTracker.</p>
+
+    <form action="/signup" method="post" enctype="multipart/form-data">
+                <input type="text" name="username" placeholder="Enter Username" id="">
+        <input type="email" name="email" placeholder="Enter Email" id="">
+        <input type="password" name="password" placeholder="Enter password" id="">
+        <!-- <input type="file" name="file" placeholder="cha" id=""> -->
+        <button>Sign up</button>
+    </form>
+
+
+    <!-- <h5>Don't have a account?   &nbsp;  <a href="/signup">Sign up</a></h5> -->
+  </div>
+
+</div>
+<%- include('footer')%>

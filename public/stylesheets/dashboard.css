@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.main
+{
+    width: 100%;
+    height: calc(100% - 10vh);
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.top
+{
+    width: 100%;
+    height: 50%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url();
+}
+
+.totalbox{
+    width: fit-content;
+    height: auto;
+    background-color: white;
+    color: black;
+    font-size: 2em;
+    border-radius: 2vh;
+    text-align: center;
+    padding: 1vh;
+    border: 3px double lightgreen;
+    margin-top: 1%;
+    box-shadow: 1vh 1vh 5vh lightgreen, inset 0.5vh 0.5vh 2vh lightgreen;
+}
+
+
+.items{
+    width: 100%;
+    height: 49%;
+    /* background-color: #fff; */
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vh;
+    
+}
+
+.cards{
+    width: 20%;
+    height: 100%;
+    border-radius: 2vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards img{
+    /* opacity: 0.8; */
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    object-position: center;
+}
+.cards h1{
+    font-size: 5vh;
+    color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.bottom{
+    width: 100%;
+    height: 50%;
+    /* background-color: bisque; */
+    position: relative;
+}
+
+.btop
+{
+    width: 100%;
+    height: 10%;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 2vh;
+    
+}
+.btop  a{
+    text-decoration: underline;
+    position: relative;
+}
+
+
+
+
+.filter {
+    /* background-color: #fff; */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+.filter form select{
+    height: 100%;
+    padding: 1vh;
+    border-radius: 2vh;
+    text-align: center;
+
+}
+
+.filter form input{
+    height: 100%;
+    width: 50%;
+    border-radius: 2vh;
+    border: 5px double salmon;
+    text-align: center;
+    outline: none;
+}
+.filter form button{
+    height: 100%;
+    border-radius: 2vh;
+    padding: 0 3vh;
+    border: 1px solid salmon;
+}
+
+
+
+.bbottom{
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;    
+    border-top: 2px solid rgb(160, 138, 138);
+}
+
+.bbottom .output{
+    margin-top: 2%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bbottom form{
+    margin-top: 5%;
+    width: 100%;
+    height: 20%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.bbottom form input, select, option, button{
+    height: 100%;
+    border-radius: 2vh;
+    text-align: center;
+    border: 1px solid black;
+    outline: none;
+    text-transform:uppercase;
+    padding: 0 2vh;
+    font-size: 2vh;
+}
+.bbottom hr{
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right,white, orange, red, blue, green,white);
+}
+
+.cans{
+
+    width: max-content;
+    height: 100%;
+    border: 1px solid red;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 3vh; */
+}
+
+
+.bbottom table{
+    width: 100%;
+        margin-top: 2%;
+        border: none;
+        text-align: center;
+    }
+    .bbottom table td{
+        gap: 2vh;
+            border: 2px double red;
+}

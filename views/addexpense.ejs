@@ -1,0 +1,63 @@
+<%- include('header')%>
+<link rel="stylesheet" href="/stylesheets/dashboard.css">
+
+    <%- include('nav')%>
+
+        <div class="main">
+            <div class="top">
+                <div class="totalbox">
+                    <h3>Your total expense is</h3>
+                    <h1><%= expenses.reduce((ac,cv)=> ac+cv.amount, 0)%></h1>
+                </div>
+
+                <div class="items">
+                    <!-- <div class="cards food"> <img src="/images/food.jpg" alt=""> 
+                        <h1><%= expenses.reduce((ac,cv)=> ac+cv.remark, 0)%></h1>
+                        </div>
+                    <div class="cards transport"><img src="/images/transport.jpg" alt="">
+                        <h1>5000</h1>
+                    </div>
+                    <div class="cards personal"><img src="/images/personal.jpg" alt="">
+                    <h1>6000</h1>
+                    </div>
+                    <div class="cards healthcare "><img src="/images/health.jpg" alt="">
+                    <h1>2000</h1></div>-->
+                </div> 
+
+            </div>
+            <div class="bottom">
+                <div class="btop">
+                    <a href="/addexpense"><h1>Add Expenses</h1></a>
+                    <div class="filter">
+                        <form action="/filter" >
+                            <select name="key" id="">
+                                <option value="amount">Amount</option>
+                        <option value="remark">Remark</option>
+                        <option value="category">Category</option>
+                        <option value="paymentmode">Payment Mode</option>
+                        <option value="Date">Date</option>
+                            </select>
+                             <input type="text" name="value" placeholder="enter search term" />
+                    <button>Filter</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bbottom">
+                    <form action="/addexpense" method="POST">
+                        <input type="number" name="amount" placeholder="Enter Amount" />
+                        <input type="text" name="remark" placeholder="Remark" />
+                        <input type="text" name="category" placeholder="Category" />
+                        <select name="paymentmode">
+                            <option value="cash">Cash</option>
+                            <option value="online">Online</option>
+                            <option value="cheque">Cheque</option>
+
+                        </select><br><br>
+                        <button>Add Expense</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <%- include('footer')%>
