@@ -8,8 +8,8 @@ exports.sendmail = function (email, user, res, req) {
         host: "smtp.gmail.com",
         port: 465,
         auth: {
-            user: "vaibhavkurmi76@gmail.com",
-            pass: "vvzoejqelhqumtao",
+            user: "abc@gmail.com", // enter your mail id from which you need to send the mail
+            pass: "abcbghdjkuehjusty", // enter the app password that you will be generating from the id entered above
         },
     });
 
